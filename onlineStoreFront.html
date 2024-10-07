@@ -21,9 +21,35 @@
                 color:white;
                 padding:10px;
             }
+
+            h2 {
+                text-align: center;
+            }
+
             #mainFooter{
                 text-align: center;
                 font-size:15px;
+            }
+
+            .cardListing {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            }
+
+            .cardListing .singles {
+            flex: 0 0 calc(50% - 20px); /* 50% width minus some margin */
+            box-sizing: border-box;
+            margin: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            }
+
+            .cardListing .singles img {
+            width: 300px; 
+            height: 400px; 
+            object-fit: cover; 
             }
         </style>
         <!--set up styles for corresponding parts below-->
