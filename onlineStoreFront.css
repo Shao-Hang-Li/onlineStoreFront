@@ -29,6 +29,7 @@ h2 {
     font-size:15px;
 }
 
+/* Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox */
 .cardListing {
 display: flex;
 flex-wrap: wrap;
@@ -36,9 +37,9 @@ justify-content: space-around;
 }
 
 .cardListing .singles {
-flex: 0 0 calc(50% - 20px); /* 50% width minus some margin */
+flex: 0 0 calc(20% - 10px); /* 50% width minus some margin */
 box-sizing: border-box;
-margin: 10px;
+margin: 2px;
 border: 1px solid #ccc;
 padding: 10px;
 text-align: center;
