@@ -33,8 +33,6 @@ h2 {
     text-align: center;
 }
 
-<<<<<<< Updated upstream
-=======
 h3{
     margin-top: 5px;
     margin-bottom: 10px;
@@ -42,14 +40,9 @@ h3{
 
 p{
     margin-top: 5px;
-    margin-bottom: 5px;
-}
-#productFilters h2{
-    text-align: left;
     margin-bottom: 10px;
 }
 
->>>>>>> Stashed changes
 #mainFooter{
     text-align: center;
     font-size:15px;
