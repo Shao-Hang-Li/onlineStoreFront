@@ -24,6 +24,11 @@ h2 {
     text-align: center;
 }
 
+#productFilters h2{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
 #mainFooter{
     text-align: center;
     font-size:15px;
