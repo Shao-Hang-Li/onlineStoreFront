@@ -9,33 +9,47 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: 1rem;
-    background-color: #ffffff;
+    background-color: #f0f0f0;
 }
 
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox for flexbox guide */
 /*styling top-nav*/
 .topbar {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
     margin: 0 10px 10px 0;
-    padding: 20px 20px 30px 50px;
-    background-color: #3d3e47;
+    padding: 10px 20px;
+    background-color: grey;
     height: auto;
 }
 
-
+/* This is to make the logo be in the same line as the navigation bar */
+.topbar .menu-contain {
+    display: flex;
+    align-items: center;
+}
 
 h1{
     text-align:center;
     background-color:rgb(212, 97, 44);
     color:white;
-    padding:10px;
+    padding:1.5em;
 }
 
 h2 {
     text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 h3{
     margin-top: 5px;
     margin-bottom: 10px;
+    text-decoration: underline;
 }
 
 p{
@@ -66,6 +80,7 @@ margin: 2px;
 border: 1px solid #ccc;
 padding: 10px;
 text-align: center;
+background-color: white;
 }
 
 .cardListing .singles img {
