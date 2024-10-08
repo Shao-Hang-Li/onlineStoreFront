@@ -12,8 +12,8 @@ body {
     background-color: #f0f0f0;
 }
 
-/* https://css-tricks.com/snippets/css/a-guide-to-flexbox for flexbox guide */
 /*styling top-nav*/
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox for flexbox guide */
 .topbar {
     display: flex; 
     align-items: center;
@@ -30,6 +30,7 @@ body {
     align-items: center;
 }
 
+/*styling h1*/
 h1{
     text-align:center;
     background-color:rgb(212, 97, 44);
@@ -37,6 +38,7 @@ h1{
     padding:1.5em;
 }
 
+/*styling h2*/
 h2 {
     text-align: center;
     margin-bottom: 40px;
@@ -46,6 +48,7 @@ h2 {
     text-decoration: underline;
 }
 
+/*styling h3*/
 h3{
     margin-top: 5px;
     margin-bottom: 10px;
@@ -66,7 +69,8 @@ p{
     font-size:15px;
 }
 
-/* Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox */
+/*Display box for the pokemon and yugioh cards*/
+/*Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox*/
 .cardListing {
 display: flex;
 flex-wrap: wrap;
@@ -89,6 +93,7 @@ height: 400px;
 object-fit: cover; 
 }
 
+/*button customizations*/
 button{
     border: none;
     background-color:orange;
