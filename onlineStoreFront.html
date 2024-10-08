@@ -8,13 +8,14 @@
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans"/>
         -->
-        <meta charset="UTF-8">
-        <meta name="author" content="Shao Hang Li, He Qi, John Nicholas Goettisheim">
-        <meta name="viewport" content="width=device-width, initial-scale-1.0">
-        <meta name="description" content="Buy and collect your favorite Pokemon/Yu-Gi-Oh cards!">
-        <meta name="keywords" content="pokemon, yugioh, YGO, yu-gi-oh, trading cards, TCG, card shop">
+
+        <meta charset="UTF-8" />
+        <meta name="author" content="Shao Hang Li, He Qi, John Nicholas Goettisheim" />
+        <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+        <meta name="description" content="Buy and collect your favorite Pokemon/Yu-Gi-Oh cards!" />
+        <meta name="keywords" content="pokemon, yugioh, YGO, yu-gi-oh, trading cards, TCG, card shop" />
         <title>TCG Card Shop</title>
-        <link rel="stylesheet" type="text/css" href="onlineStoreFront.css">
+        <link rel="stylesheet" type="text/css" href="onlineStoreFront.css" />
     </head>
     <body>
         <!--This is the top navigation bar-->
@@ -35,6 +36,18 @@
                 </div>
             </nav>
         </header>
+        
+        <section id="productFilters">
+            <h2>Product Filters</h2>
+            <form>
+                <label for="games">Card Games</label>
+                <select id="games" name="games">
+                    <option value="all">All</option>
+                    <option value="pokemon">Pokemon Card</option>
+                    <option value="yugioh">Yu-Gi-Oh! Cards</option>
+                </select>
+            </form>
+        </section>
 
         <section id="pokemon">
             <h2>Pokemon Cards</h2>
