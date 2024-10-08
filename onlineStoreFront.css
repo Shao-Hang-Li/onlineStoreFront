@@ -79,3 +79,15 @@ button{
     color:white;
     border-radius: 8px;
 }
+
+/* styling the footer*/
+#mainFooter {
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+    clear: both;
+    height: 70px;
+}
+
+#mainFooter p{
+    margin-top: 10px;
+}
