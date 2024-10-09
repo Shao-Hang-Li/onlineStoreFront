@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans"/>
         -->
 
+        <!-- meta and stylesheet reference-->
         <meta charset="UTF-8" />
         <meta name="author" content="Shao Hang Li, He Qi, John Nicholas Goettisheim" />
         <meta name="viewport" content="width=device-width, initial-scale-1.0" />
@@ -22,11 +23,16 @@
         <!--This is the top navigation bar-->
         <header id="title">
             <h1>Shao&Qi&John Trading Card Shop</h1>
+
+            <!--This is the navigation bar for the logo and the menu-->
             <a name="HOME"></a> <!--This is an anchor for interactive navigation bar-->
 
+
             <nav class="topbar">
+                <!--We created a container for the menu sections to put different sections (logo + important sections)-->
                 <div class="menu-contain">
                     <img class="logo" src="Images/logo.png" alt="Card Shop Logo" width="200">
+                    <!--We added and customized the buttons for the navigation bar-->
                     <ul>
                         <a href="#HOME"><button type="home">Home</button></a>
                         <a href="#POKEMON"><button type="pokemon">Pokemon</button></a>
@@ -37,9 +43,10 @@
                 </div>
             </nav>
         </header>
-        
+        <!--This is the product filter section for games-->
         <section id="productFilters">
             <h2>Product Filters</h2>
+            <!--Created a form inspired by w3school: https://www.w3schools.com/html/html_form_elements.asp-->
             <form>
                 <label for="games">Card Games:</label>
                 <select id="games" name="games">
@@ -49,17 +56,22 @@
                 </select>
             </form>
         </section>
-
+        <!--This is the Pokemon single card section-->
         <section id="pokemon">
             <h2>Pokemon Cards</h2>
             <div class="cardListing">
+
+                <!--Separated each card in a container to put it's own value (name, image and price)-->
                 <a name="POKEMON"></a> <!--This is an anchor for interactive navigation bar-->
+
                 <div card class="singles">
                     <h3>Pikachu V Max</h3>
                     <img src="Images/pikachuVMax.png" alt="Pikachu V Max">
                     <p>Price: 90 $CAD</p>
                     <button>Add to Cart</button>
                 </div>
+                <!--The video part is lucky since I wasn't able to implement the correct flexbox (I created a space) to include the video, so 
+                I created another container for the video. We used Iframe since the video was too big size.-->
                 <div class="videos">
                     <iframe width="400" height="500" src="Videos/Top 5 Rainbow Rare Pokemon Cards.mp4"></iframe>
                 </div>
@@ -75,7 +87,7 @@
                 </div>
             </div>
         </section>
-
+        <!--This is the YuGiOh card section-->
         <section id="yugioh">
             <h2>Yu-Gi-Oh! Cards</h2>
             <div class="cardListing">
@@ -107,6 +119,7 @@
             <h2></h2>
 
         </section>
+        <!--This is the checkout section-->
         <section id="checkout">
             <h4>Checkout</h4>
             <p>Please enter payment information here</p>
@@ -122,9 +135,10 @@
             </ul>
         <input type="submit">
         </section>
-        
+        <!--This is the review sections-->
         <section id="reviews">
             <h2>Customer Reviews</h2>
+            <!--Container for all the reviews-->
             <div class="review-box">
                 <a name="REVIEW"></a> <!--This is an anchor for interactive navigation bar-->
                 <div class="review">
@@ -142,9 +156,8 @@
                     <p>Don't mind me, I will just buy everything in this store.</p>
                 </div>
             </div>
-
         </section>
-
+        <!--This is the footer section-->
         <footer id="mainFooter">
             <p>&copy; 2024 Shao&Qi&John Nicholas Trading Card Shop. All Right Reserved.</p>
             <p>
@@ -153,6 +166,5 @@
                 and <a href="#">Instagram</a> .
             </p>
         </footer>
-            <!--some random shit-->
     </body>
 </html>
