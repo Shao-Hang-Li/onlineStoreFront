@@ -12,6 +12,12 @@ body {
     background-color: #f0f0f0;
 }
 
+/*adjusting label font for readability*/
+label{
+    font-size: large;
+    margin: 0 10px 10px 20px;
+}
+
 /*styling top-nav*/
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox for flexbox guide */
 .topbar {
@@ -22,18 +28,6 @@ body {
     padding: 10px 20px;
     background-color: grey;
     height: auto;
-}
-
-/*adjusting label font for readability*/
-label{
-    font-size: large;
-    margin: 0 10px 10px 20px;
-}
-
-/* This is to make the logo be in the same line as the navigation bar */
-.topbar .menu-contain {
-    display: flex;
-    align-items: center;
 }
 
 /*styling h1*/
@@ -66,40 +60,6 @@ p{
     margin-top: 5px;
 }
 
-#productFilters h2{
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-#mainFooter{
-    text-align: center;
-    font-size:15px;
-}
-
-/*Display box for the pokemon and yugioh cards*/
-/*Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox*/
-.cardListing {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-}
-
-.cardListing .singles {
-flex: 0 0 calc(20% - 10px); /* 50% width minus some margin */
-box-sizing: border-box;
-margin: 2px;
-border: 1px solid #ccc;
-padding: 10px;
-text-align: center;
-background-color: white;
-}
-
-.cardListing .singles img {
-width: 300px; 
-height: 400px; 
-object-fit: cover; 
-}
-
 /*button customizations*/
 button{
     border: none;
@@ -116,18 +76,59 @@ button{
     border-radius: 8px;
 }
 
-
+/*Display box for the pokemon and yugioh cards*/
+/*Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox*/
+.cardListing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+    
+.cardListing .singles {
+    flex: 0 0 calc(20% - 10px); /* 50% width minus some margin */
+    box-sizing: border-box;
+    margin: 2px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+    
+.cardListing .singles img {
+    width: 300px; 
+    height: 400px; 
+    object-fit: cover; 
+}
+    
 /*styling review box*/
 .review-box{
-    margin: 0 10px 10px 20px;
-    padding: 10px 20px;
-    background-color: rgb(214, 214, 214);
-    height: auto;
+        margin: 0 10px 10px 20px;
+        padding: 10px 20px;
+        background-color: rgb(214, 214, 214);
+        height: auto;
 }
-
+    
 /*review p part */
 .review-box p{
-    padding: 10px;
+        padding: 10px;
+}
+        
+
+/* This is to make the logo be in the same line as the navigation bar */
+.topbar .menu-contain {
+    display: flex;
+    align-items: center;
+}
+
+
+#productFilters h2{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#mainFooter{
+    text-align: center;
+    font-size:15px;
 }
 
 
