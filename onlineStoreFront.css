@@ -106,11 +106,16 @@ button{
         padding: 10px 20px;
         background-color: rgb(214, 214, 214);
         height: auto;
+        clear: both;
 }
     
 /*review p part */
 .review-box p{
         padding: 10px;
+}
+
+#review h2 {
+    clear: both;
 }
         
 
@@ -124,6 +129,33 @@ button{
 #productFilters h2{
     text-align: left;
     margin-bottom: 10px;
+}
+
+#checkout {
+    background-color: orange;
+    margin: 10px;
+    float: both;
+    width: 0 auto;
+    
+}
+
+#checkout h4 {
+    font-size: 2rem;
+}
+
+#checkout p {
+    padding: 5px;
+}
+
+#checkout input {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+#checkout img {
+    float: right;
+    height: auto;
 }
 
 #mainFooter{
