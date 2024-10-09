@@ -13,47 +13,47 @@
 /*general settings*/
 body {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 1rem;
+    font-size: 1rem;      /*Responsive measurements*/
     background-color: #f0f0f0;
 }
 
 /*adjusting label font for readability*/
 label{
     font-size: large;
-    margin: 0 10px 10px 20px;
+    margin: 0 10px 10px 20px;  /*right, bottom, left to separate the elements*/
 }
 
 /*styling top-nav*/
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox for flexbox guide */
 .topbar {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between; 
-    margin: 0 0 10px 0;
-    padding: 10px 20px;
+    display: flex;                  /*Allow responsive horizontal layout*/
+    align-items: center;            /*Center alignment (vertically)*/
+    justify-content: space-between; /*Space between the list of menus*/
+    margin: 0 0 10px 0;             /*Only bottom*/
+    padding: 10px 20px;             
     background-color: grey;
-    height: auto;
+    height: auto;                   /*Expand the space as needed*/
 }
 
 /*styling h1*/
 h1{
-    text-align:center;
+    text-align:center;              
     background-color:rgb(212, 97, 44);
     color:white;
-    padding:1.5em;
+    padding:1.5em;                  /*Allow responsive size*/
 }
 
-/*styling h2*/
+/*styling h2 (italic, bold, underline, centered)*/
 h2 {
     text-align: center;
     margin-bottom: 40px;
     margin-top: 20px;
-    font-style: italic;
+    font-style: italic;   
     font-weight: bold;
     text-decoration: underline;
 }
 
-/*styling h3*/
+/*styling h3 (underline)*/
 h3{
     margin-top: 5px;
     margin-bottom: 10px;
@@ -84,14 +84,14 @@ button{
 /*Display box for the pokemon and yugioh cards*/
 /*Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox*/
 .cardListing {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: flex;                 /*Create flex box (responsive design)*/
+    flex-wrap: wrap;               /*Align them horizontally (wrapped)*/
+    justify-content: space-around; /*Space evenly all the listings*/
 }
     
 .cardListing .singles {
     flex: 0 0 calc(20% - 10px); /* 50% width minus some margin */
-    box-sizing: border-box;
+    box-sizing: border-box;     
     margin: 2px;
     border: 1px solid #ccc;
     padding: 10px;
@@ -110,8 +110,8 @@ button{
         margin: 0 10px 10px 10px;
         padding: 10px 10px;
         background-color: rgb(214, 214, 214);
-        height: auto;
-        clear: both;
+        height: auto;      /*Expand as needed*/
+        clear: both;       /*This help, so it doesn't cover all the other elements (limitation)*/
 }
     
 /*review p part */
