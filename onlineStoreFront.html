@@ -15,6 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale-1.0" />
         <meta name="description" content="Buy and collect your favorite Pokemon/Yu-Gi-Oh cards!" />
         <meta name="keywords" content="pokemon, yugioh, YGO, yu-gi-oh, trading cards, TCG, card shop" />
+        <meta name="socialMedia" content="X, Facebook, Instagram">
         <title>TCG Card Shop</title>
         <link rel="stylesheet" type="text/css" href="onlineStoreFront.css" />
     </head>
@@ -22,18 +23,22 @@
         <!--This is the top navigation bar-->
         <header id="title">
             <h1>Shao&Qi&John Trading Card Shop</h1>
+
             <!--This is the navigation bar for the logo and the menu-->
+            <a name="HOME"></a> <!--This is an anchor for interactive navigation bar-->
+
+
             <nav class="topbar">
                 <!--We created a container for the menu sections to put different sections (logo + important sections)-->
                 <div class="menu-contain">
                     <img class="logo" src="Images/logo.png" alt="Card Shop Logo" width="200">
                     <!--We added and customized the buttons for the navigation bar-->
                     <ul>
-                        <a href="#"><button type="home">Home</button></a>
-                        <a href="#"><button type="pokemon">Pokemon</button></a>
-                        <a href="#"><button type="yugioh">YuGiOh</button></a>
-                        <a href="#"><button type="cart">Cart</button></a>
-                        <a href="#"><button type="review">Review</button></a>
+                        <a href="#HOME"><button type="home">Home</button></a>
+                        <a href="#POKEMON"><button type="pokemon">Pokemon</button></a>
+                        <a href="#YUGIOH"><button type="yugioh">YuGiOh</button></a>
+                        <a href="#CART"><button type="cart">Cart</button></a>
+                        <a href="#REVIEW"><button type="review">Review</button></a>
                     </ul>
                 </div>
             </nav>
@@ -55,7 +60,10 @@
         <section id="pokemon">
             <h2>Pokemon Cards</h2>
             <div class="cardListing">
+
                 <!--Separated each card in a container to put it's own value (name, image and price)-->
+                <a name="POKEMON"></a> <!--This is an anchor for interactive navigation bar-->
+
                 <div card class="singles">
                     <h3>Pikachu V Max</h3>
                     <img src="Images/pikachuVMax.png" alt="Pikachu V Max">
@@ -83,6 +91,7 @@
         <section id="yugioh">
             <h2>Yu-Gi-Oh! Cards</h2>
             <div class="cardListing">
+                <a name="YUGIOH"></a> <!--This is an anchor for interactive navigation bar-->
                 <div card class="singles">
                     <h3>Dark Magician</h3>
                     <img src="Images/darkMagicianSDY.png" alt="Dark Magician">
@@ -106,6 +115,7 @@
         </section>
 
         <section id="cart">
+            <a name="CART"></a> <!--This is an anchor for interactive navigation bar-->
             <h2></h2>
 
         </section>
@@ -130,6 +140,7 @@
             <h2>Customer Reviews</h2>
             <!--Container for all the reviews-->
             <div class="review-box">
+                <a name="REVIEW"></a> <!--This is an anchor for interactive navigation bar-->
                 <div class="review">
                     <h3>Shao Hang Li</h3>
                     <p>It took me so much time to do the flexbox, atleast, the Pikachu V Max card that I bought was great!</p>
@@ -149,6 +160,11 @@
         <!--This is the footer section-->
         <footer id="mainFooter">
             <p>&copy; 2024 Shao&Qi&John Nicholas Trading Card Shop. All Right Reserved.</p>
+            <p>
+                Follow us on <a href="#">X</a> , 
+                <a href="#">Facebook</a> , 
+                and <a href="#">Instagram</a> .
+            </p>
         </footer>
     </body>
 </html>
