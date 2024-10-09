@@ -102,8 +102,8 @@ button{
     
 /*styling review box*/
 .review-box{
-        margin: 0 10px 10px 20px;
-        padding: 10px 20px;
+        margin: 0 10px 10px 10px;
+        padding: 10px 10px;
         background-color: rgb(214, 214, 214);
         height: auto;
         clear: both;
@@ -111,7 +111,7 @@ button{
     
 /*review p part */
 .review-box p{
-        padding: 10px;
+    padding: 10px;
 }
 
 #review h2 {
