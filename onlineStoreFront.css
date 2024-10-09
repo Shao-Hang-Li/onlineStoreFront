@@ -143,6 +143,7 @@ button{
 
 #checkout h4 {
     font-size: 2rem;
+    text-decoration: underline;
 }
 
 #checkout p {
