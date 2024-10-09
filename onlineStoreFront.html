@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--CSS if needed--
+        <!--CSS if needed
         <link rel="stylesheet" type="text/css" href="onlineStoreFront.css">
         <link rel="stylesheet" type="text/css
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.mins.css">
@@ -25,7 +25,7 @@
             <h1>Shao&Qi&John Trading Card Shop</h1>
 
             <!--This is the navigation bar for the logo and the menu-->
-            <a name="HOME"></a> <!--This is an anchor for interactive navigation bar-->
+            <a id="HOME"></a> <!--This is an anchor for interactive navigation bar-->
 
 
             <nav class="topbar">
@@ -33,13 +33,13 @@
                 <div class="menu-contain">
                     <img class="logo" src="Images/logo.png" alt="Card Shop Logo" width="200">
                     <!--We added and customized the buttons for the navigation bar-->
-                    <ul>
-                        <a href="#HOME"><button type="home">Home</button></a>
-                        <a href="#POKEMON"><button type="pokemon">Pokemon</button></a>
-                        <a href="#YUGIOH"><button type="yugioh">YuGiOh</button></a>
-                        <a href="#CART"><button type="cart">Cart</button></a>
-                        <a href="#REVIEW"><button type="review">Review</button></a>
-                    </ul>
+                    
+                    <a href="#HOME" class="button">Home</a>
+                    <a href="#POKEMON" class="button">Pokemon</a>
+                    <a href="#YUGIOH" class="button">YuGiOh</a>
+                    <a href="#CART" class="button">Cart</a>
+                    <a href="#REVIEW" class="button">Review</a>
+                    
                 </div>
             </nav>
         </header>
@@ -62,9 +62,9 @@
             <div class="cardListing">
 
                 <!--Separated each card in a container to put it's own value (name, image and price)-->
-                <a name="POKEMON"></a> <!--This is an anchor for interactive navigation bar-->
+                <a id="POKEMON"></a> <!--This is an anchor for interactive navigation bar-->
 
-                <div card class="singles">
+                <div class="singles"><!--cards-->
                     <h3>Pikachu V Max</h3>
                     <img src="Images/pikachuVMax.png" alt="Pikachu V Max">
                     <p>Price: 90 $CAD</p>
@@ -73,17 +73,17 @@
                 <!--The video part is lucky since I wasn't able to implement the correct flexbox (I created a space) to include the video, so 
                 I created another container for the video. We used Iframe since the video was too big size.-->
                 <div class="videos">
-                    <iframe width="400" height="500" src="Videos/Top 5 Rainbow Rare Pokemon Cards.mp4"></iframe>
+                    <iframe width="400" height="500" src="Videos/Top5RainbowRarePokemonCards.mp4"></iframe>
                 </div>
 
-                <div card class="singles">
+                <div class="singles"><!--cards-->
                     <h3>Charizard Base Set 04 (First Edition)</h3>
                     <img src="Images/CharizardBaseSet04.png" alt="Charizard Base Set 04 (First Edition)">
                     <p>Price: 190 $CAD</p>
                     <button>Add to Cart</button>
                 </div>
                 <div class="videos">
-                    <iframe width="400" height="500" src="Videos/I pulled 1st Edition Base Set CHARIZARD .mp4"></iframe>
+                    <iframe width="400" height="500" src="Videos/video2.mp4"></iframe>
                 </div>
             </div>
         </section>
@@ -91,18 +91,18 @@
         <section id="yugioh">
             <h2>Yu-Gi-Oh! Cards</h2>
             <div class="cardListing">
-                <a name="YUGIOH"></a> <!--This is an anchor for interactive navigation bar-->
-                <div card class="singles">
+                <a id="YUGIOH"></a> <!--This is an anchor for interactive navigation bar-->
+                <div class="singles">
                     <h3>Dark Magician</h3>
                     <img src="Images/darkMagicianSDY.png" alt="Dark Magician">
                     <p>Price: 25 $CAD</p>
                     <button>Add to Cart</button>
                 </div>
                 <div class="videos">
-                    <iframe width="400" height="500" src="Videos/Pulling The EXCLUSIVE Alternate Art Dark Magician!.mp4"></iframe>
+                    <iframe width="400" height="500" src="Videos/DarkMagician.mp4"></iframe>
                 </div>
 
-                <div card class="singles">
+                <div class="singles">
                     <h3>Blue Eyes White Dragon</h3>
                     <img src="Images/blueEyesWhiteDragonLOB.png" alt="Blue Eyes White Dragon">
                     <p>Price: 50 $CAD</p>
@@ -116,30 +116,28 @@
 
         <!--This is the checkout section-->
         <section id="checkout">
-            <a name="CART"></a> <!--This is an anchor for interactive navigation bar-->
+            <a id="CART"></a> <!--This is an anchor for interactive navigation bar-->
             <h4>Checkout</h4>
             <p>Please enter payment information here</p>
             <img class="logo" src="Images/logo.png" alt="Card Shop Logo" width="200">
-            <ul>
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="number" placeholder="Card Number">
-                <input type="number" placeholder="Expiration Date">
-                <input type="number" placeholder="Security Number">
-                <input type="text" placeholder="Address">
-                <input type="text" placeholder="Country and City">
-                <input type="text" placeholder="Postal Code">
-                <p>Optional</p>
-                <input type="text" placeholder="Apartment Number">
-            </ul>
-        <input type="submit">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="number" placeholder="Card Number">
+            <input type="number" placeholder="Expiration Date">
+            <input type="number" placeholder="Security Number">
+            <input type="text" placeholder="Address">
+            <input type="text" placeholder="Country and City">
+            <input type="text" placeholder="Postal Code">
+            <p>Optional</p>
+            <input type="text" placeholder="Apartment Number">
+            <input type="submit">
         </section>
         <!--This is the review sections-->
         <section id="reviews">
             <h2>Customer Reviews</h2>
             <!--Container for all the reviews-->
             <div class="review-box">
-                <a name="REVIEW"></a> <!--This is an anchor for interactive navigation bar-->
+                <a id="REVIEW"></a> <!--This is an anchor for interactive navigation bar-->
                 <div class="review">
                     <h3>Shao Hang Li</h3>
                     <p>It took me so much time to do the flexbox, atleast, the Pikachu V Max card that I bought was great!</p>

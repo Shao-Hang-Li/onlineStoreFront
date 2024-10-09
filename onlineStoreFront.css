@@ -81,6 +81,22 @@ button{
     border-radius: 8px;
 }
 
+/*make link look like buttongs since nesting button in a is not valid*/
+.button{
+    border: none;
+    background-color:orange;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width:120px;
+    color:white;
+    border-radius: 8px;
+}
+
 /*Display box for the pokemon and yugioh cards*/
 /*Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox*/
 .cardListing {
@@ -138,7 +154,8 @@ button{
 
 #checkout {
     background-color: orange;
-    margin: 10px;   
+    margin: 10px;
+    height: 220px;   
 }
 
 #checkout h4 {
